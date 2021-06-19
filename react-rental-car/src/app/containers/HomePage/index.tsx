@@ -6,10 +6,11 @@ import { Marginer } from "../../components/marginer";
 import { Navbar } from "../../components/navbar";
 import { AboutUs } from "./aboutUs";
 import { BookingSteps } from "./bookingSetps";
+import { TopCars } from "./topCars";
 import { TopSection } from "./topSection";
 
 const PageContainer = styled.div`
-  ${tw`
+    ${tw`
     flex
     flex-col
     w-full
@@ -19,19 +20,19 @@ const PageContainer = styled.div`
   `}
 `;
 
-
 export function HomePage() {
-    return(
-      <PageContainer>
-        <Navbar/>
-        <TopSection/>
-        <Marginer direction="vertical" margin="4em" />
-        <BookCard />
-        <Marginer direction="vertical" margin="10em" />
-        <BookingSteps />
-        <Marginer direction="vertical" margin="5em" />
-        <AboutUs />
-    </PageContainer>  
-    )
-    
+    return (
+        <PageContainer>
+            <Navbar />
+            <TopSection />
+            <Marginer direction="vertical" margin="4em" />
+            <BookCard />
+            <Marginer direction="vertical" margin="10em" />
+            <BookingSteps />
+            <Marginer direction="vertical" margin="5em" />
+            <AboutUs />
+            <Marginer direction="vertical" margin="8em" />
+            <TopCars />
+        </PageContainer>
+    );
 }
